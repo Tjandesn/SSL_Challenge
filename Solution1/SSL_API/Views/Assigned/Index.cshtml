@@ -1,0 +1,13 @@
+﻿@{
+    ViewBag.Title = "Your Modules";
+}
+
+
+<h2>@ViewBag.Title</h2>
+<h3>@ViewBag.Message</h3>
+<ul>
+    @foreach (var module in ViewBag.Devices)
+    {
+        <li>@module.MacAddress</li>
+    }
+</ul>
